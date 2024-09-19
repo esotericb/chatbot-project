@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Customer Service Chatbot</title>
+</head>
+<body>
+    <div id="chat-container">
+        <!-- Chat Header -->
+        <div id="chat-header">
+            Customer Service Chatbot
+            <span>Online</span>
+        </div>
+
+        <!-- Chat Output Area -->
+        <div id="chat-output">
+            <p class="bot-message">Hello, How May I Help You?</p>
+        </div>
+
+        <!-- Input Area -->
+        <div id="input-container">
+            <input type="text" id="user-input" placeholder="Enter Your Query Here...">
+            <button id="send-button" onclick="sendMessage()">&#10148;</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+{
+    "intents": [
+        {
+            "tag": "billing_inquiry",
+            "patterns": [
+                "What is my bill?",
+                "Check my bill",
+                "How much do I owe?",
+                "Show my bill"
+            ],
+            "responses": [
+                "You can check your bill by using our USSD COde *873*048# and selecting Query Bill, or contacting customer support."
+            ]
+        },
+      {
+            "tag": "billing_complaint",
+            "patterns": [
+                "My bill was too high?",
+                "High bill",
+                "Why was I billed on estimate?",
+                "Billing complaint"
+            ],
+            "responses": [
+                "You can check your bill by using our USSD Code *873*048# and selecting Query Bill, or contacting customer support.",
+                "This can occur when no reading is captured for your account due to lack of access to the water meter because of a closed gate or fierce dog, or due to a stuck or faulty meter.",
+                "Kindly check on the units consumed, and confirm whether there is a leakage after your meter."
+            ]
+        },
+        {
+            "tag": "payment_method",
+            "patterns": [
+                "How can I pay my bill?",
+                "What payment methods are available?",
+                "How do I pay my water bill?",
+                "Payment options"
+            ],
+            "responses": [
+                "You can pay your water bills through M-Pesa PayBill No. 772153, KCB Account No. 1273194454, or Cooperative Bank Account No. 01100632410100. Do not give Cash to anyone."
+            ]
+        },
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hello",
+                "Hi",
+                "Good morning",
+                "Good evening"
+            ],
+            "responses": [
+                "Hello! How can I assist you today?",
+                "Hi, How may I help you?"
+            ]
+        },
+      {
+            "tag": "service_request",
+            "patterns": [
+                "My meter is stuck",
+                "I need a new water meter",
+                "I have no water"
+            ],
+            "responses": [
+                "Please provide your location and account details, a technician will be assigned the task.",
+                "Your service request has been submitted. We'll contact you soon.",
+                "Please provide your address and a brief description of the issue"
+            ]
+        },
+      {
+            "tag": "leak_report",
+            "patterns": [
+                "There is a leakage on my meter",
+                "I have a leak in my backyard",
+                "There is a water burst in town"
+            ],
+            "responses": [
+                "Please provide your location and account details, a technician will be assigned the task.",
+                "Please provide your location and account details, a technician will be assigned the task.",
+                "Please provide the nearest landmark location address and a brief description of the issue"
+            ]
+        },
+      {
+            "tag": "thanks",
+            "patterns": [
+                "Thnaks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping"
+            ],
+            "responses": [
+                "Happy to help",
+                "My pleasure",
+                "You are welcome",
+                "Any time"
+            ]
+        },
+      {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": [
+                "Sorry, can't understand you",
+                "Please give more information",
+                "Not sure I understand"
+            ]
+        },
+        {
+            "tag": "default",
+            "patterns": [],
+            "responses": [
+                "I'm here to help. Please provide more details or try asking in a different way."
+            ]
+        }
+    ]
+}
